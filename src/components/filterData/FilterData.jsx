@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 
@@ -7,7 +7,7 @@ function FilterData({setCurrData, data}) {
     const [currTrigger, setCurrTrigger] = useState("Trigger reason");
     const [currRisk, setCurrRisk] = useState('Risk level');
     const [riskClicked, setRiskClicked] = useState(false);
-
+    const [searchUser, setSearchUser] = useState('');
     const handleTrigger = (value)=>{
         setCurrTrigger(value);
         if(value==='Trigger reason'){
@@ -33,13 +33,29 @@ function FilterData({setCurrData, data}) {
         setRiskClicked(false);
         
     }
+    const handleSearch = (value)=>{
+        setCurrData(
+            data.filter((currItem)=>{
+                let str1 = currItem.username+currItem.email;
+                str1 = str1.replace(' ','');
+                str1 = str1.toLowerCase();
+                return str1.includes(value.toLowerCase())})
+       )
+        setCurrTrigger('Trigger reason');
+        setRiskClicked(false);
+        setCurrRisk('Risk level');
+        setTriggerClicked(false);
+    }
+    useEffect(()=>{
+        handleSearch(searchUser);
+    },[searchUser]);
 
   return (
     <div className="dashboard-filters">
         <span className='search-container'>
         <div className='search-icon'><IoSearchOutline /></div>
         
-        <input  className='search-box' type="text" placeholder='Search' />
+        <input  className='search-box' type="text" value={searchUser} onChange={(e)=>setSearchUser(e.target.value)} placeholder='Search' />
         </span>
         <div className="filter-option-container">
         <div className='filter-options' onClick={()=>{setTriggerClicked(!triggerClicked);setRiskClicked(false);}}>{currTrigger} {triggerClicked?<FaChevronUp />:<FaChevronDown />}</div>
