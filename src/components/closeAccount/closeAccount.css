@@ -1,0 +1,99 @@
+.closeAccount-container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8)
+    ;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-box{
+background-color: white;
+padding: 20px;
+width: 500px;
+}
+.close-box .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.close-box .header span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.close-box .header button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 28px;
+}
+.form span{
+    color: #777676;
+}
+.form input{
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #E4E4E4;
+    margin-top: 5px;
+    outline: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+.input-email{
+    width: 100%;
+}
+.input-reason{
+    width: 100%;
+}
+.uar-option{
+    display: flex;
+    align-items: center;
+}
+.uar-option div{
+    display: flex;
+    align-items: center;
+}
+.uar-option span{
+    margin-right: 30px;
+    color: black;
+}
+.uar-option label{
+    margin-right: 20px;
+    margin-left: 8px;
+}
+textarea{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #E4E4E4;
+    margin-top: 5px;
+    outline: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+.form-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.form-footer div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-footer button{
+    width: 200px;
+    background-color: #E4E4E4;
+    border-radius: 8px;
+    border: none;
+    color: #ADADAD;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: not-allowed;
+}
+.btn-active{
+    background-color: #4643EE !important;
+    color: white !important;
+    cursor: pointer !important;
+    z-index: 2;
+}

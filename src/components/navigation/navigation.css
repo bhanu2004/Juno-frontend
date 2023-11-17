@@ -1,0 +1,29 @@
+.left-panel{
+    flex: 1;
+    flex-basis: 200px;
+    border-right: 1px solid #E4E4E4;
+    padding: 48px 32px 32px 48px;
+  }
+  .logo{
+    border-bottom: 2px solid rgb(71, 71, 71);
+    border-top: 2px solid rgb(71, 71, 71);
+    font-size: 24px;
+    width: max-content;
+    margin-bottom: 30px;
+    padding: 10px;
+  
+  }
+  .nav-options li{
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    /* background-color: aqua; */
+  }
+  .nav-options li a{
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    /* background-color: aqua; */
+  }
