@@ -1,9 +1,8 @@
 .closeAccount-container{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8)
-    ;
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -96,4 +95,23 @@ textarea{
     color: white !important;
     cursor: pointer !important;
     z-index: 2;
+}
+
+@media screen and (max-width:650px) {
+    .closeAccount-container{
+        position: fixed;
+        display: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .close-box{
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    }
 }

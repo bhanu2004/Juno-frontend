@@ -143,6 +143,10 @@ a{
   display: none;
 }
 @media screen and (max-width:1100px) {
+  .right-panel{
+    width: 100%;
+
+  }
   .heading h1{
     margin-left: 40px;
   }
@@ -175,4 +179,26 @@ a{
     font-size: 32px;
     cursor: pointer;
   }
+}
+@media screen and (max-width:650px) {
+  /* .right-panel{
+    width: 100%;
+    overflow: scroll;
+  } */
+  .dashboard-filters{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  .filter-reasons{
+    
+    left: 0;
+    top: 40px;
+    z-index: 3;
+  }
+  .search-box{
+    width: 100%;
+  }
+
 }

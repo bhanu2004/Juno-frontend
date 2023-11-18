@@ -79,7 +79,10 @@
     align-items: center;
   }
   @media screen and (max-width:640px) {
-    
+    .dashboard-table{
+      width: 100%;
+      overflow: scroll;
+    }
     .dashboard-table th{
       text-align: left;
       padding: 10px;
@@ -111,4 +114,7 @@
     .review-date{
       font-size: 10px;
     }
+  }
+  @media screen and (max-width:650px) {
+    
   }
