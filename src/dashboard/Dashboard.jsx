@@ -35,7 +35,6 @@ function Dashboard() {
           </div>
           <div className="dashboard">
             <div className="dashboard-sections">
-            {/* <div className='line'></div> */}
               <div className='dashboard-options'>
                 
                 <div className={`monitor-status ${currStatus=='pending'?'active-dashboard':''}`} onClick={()=>setCurrStatus('pending')}>Pending</div>

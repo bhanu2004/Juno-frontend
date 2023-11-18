@@ -188,7 +188,7 @@ a{
   .dashboard-filters{
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 70px;
     gap: 15px;
   }
   .filter-reasons{
@@ -199,6 +199,12 @@ a{
   }
   .search-box{
     width: 100%;
+  }
+  .dashboard-close{
+
+    left: 0;
+    top: 55px;
+    
   }
 
 }
